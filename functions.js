@@ -19,3 +19,10 @@ function add2(num1, num2, ...num3) {
 }
 const numbers = [1, 2, 3, 4, 5];
 console.log(add2(2, 3, ...numbers));
+function getItems(items) {
+    return new Array().concat(items);
+}
+let concatResult = getItems([1, 2, 3, 4, 5]);
+console.log(concatResult);
+let concatString = getItems(['b', 'e', 'l', 'l', 'a']);
+console.log(concatString);

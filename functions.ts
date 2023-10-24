@@ -29,3 +29,15 @@ function add2(num1: number, num2: number, ...num3: number[]): number {
 const numbers = [1, 2, 3, 4, 5]
 
 console.log(add2(2, 3, ...numbers))
+
+function getItems<T>(items: T[]): T[] {
+    return new Array<T>().concat(items)
+}
+
+let concatResult = getItems([1, 2, 3, 4, 5])
+
+console.log(concatResult)
+
+let concatString = getItems(['b', 'e', 'l', 'l', 'a'])
+
+console.log(concatString)
