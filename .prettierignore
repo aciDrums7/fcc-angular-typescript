@@ -1,5 +1,5 @@
 # Typescript Compiler built files
-*.js
+dist
 
 #Yarn files
 yarn.*

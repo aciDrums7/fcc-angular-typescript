@@ -68,3 +68,9 @@ let [user1, user2, ...restUsers]: User[] = [
 console.log(user1)
 console.log(user2)
 console.log(restUsers)
+
+//? Decorators are used to modify behaviour at runtime
+// @Component({})
+class Component {
+    constructor(public name: string) {}
+}
